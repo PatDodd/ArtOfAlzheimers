@@ -10,3 +10,43 @@ License:
 License URI:
 General comments (optional).
 */
+html{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  width:960px;
+  margin: 0 auto;
+}
+
+img.logo{
+  width:336px
+}
+
+.logo_a{
+  position: relative;
+  top:20px;
+}
+
+nav{
+  margin-top: 50px;
+}
+
+ul.nav {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+ul.nav li{
+  display: inline;
+  padding-right: 30px;
+}
+
+ul.nav li a {
+  text-decoration: none;
+  color: black;
+  font-family: helvetica, sans-serif;
+  font-size: 1.5em;
+}
