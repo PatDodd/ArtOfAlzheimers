@@ -3,11 +3,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-   <link rel="stylesheet" href="flexslider.css" type="text/css">
+   <title><?php bloginfo('Description'); ?> | <?php bloginfo('name'); ?></title>
+   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <script src="jquery.flexslider.js"></script>
+   <script src="<?php bloginfo('template_directory'); ?>/jquery.flexslider.js"></script>
    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body>
   <div class="header">
@@ -17,7 +18,7 @@
       <li><a href="">Resources</a></li>
       <li><a href="">Contact</a></li>
     </ul>
-    <a href="home.html" class="logo_a"><img src="images/logo.png" alt="logo" class="logo"></a>
+    <a href="home.php" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
     <form class="email">
       <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
       <button type="submit">sign-up</button>
@@ -37,13 +38,13 @@
     <div class="flexslider">
     <ul class="slides">
       <li>
-        <img src="images/slide2.jpg" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/slide2.jpg" />
       </li>
       <li>
-        <img src="images/slide1.jpg" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/slide1.jpg" />
       </li>
       <li>
-        <img src="images/slide3.jpg" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/slide3.jpg" />
       </li>
     </ul>
   </div>
