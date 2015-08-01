@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Home
+*/
+?>
 <!doctype html>
 <html>
 <head>
