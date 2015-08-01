@@ -18,7 +18,7 @@
       <li><a href="">Resources</a></li>
       <li><a href="">Contact</a></li>
     </ul>
-    <a href="home.html" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
+    <a href="hurricanelanterns.net/wp" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
     <form class="email">
       <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
       <button type="submit">sign-up</button>
