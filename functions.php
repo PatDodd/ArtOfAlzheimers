@@ -13,4 +13,9 @@ License URI:
 General comments (optional).
 */
 
+//register menus
+register_nav_menus(array(
+  'main-menu' => __('Main Menu')
+));
+
 ?>

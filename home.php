@@ -24,13 +24,11 @@
       <button type="submit">sign-up</button>
     </form>
     <nav>
-      <ul class="nav">
-        <li><a href="">About</a></li>
-        <li><a href="">Exhibitions</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+      <?php wp_nav_menu( array(
+      'theme_location' => 'main-menu',
+      'container' => 'div',
+      'container_id' => 'navigation',
+      'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
       <a href="" class="donate">DONATE</a>
     </nav>
   </div>
@@ -77,13 +75,11 @@
   </div>
     </article>
     <footer>
-      <ul class="lower-nav">
-        <li><a href="">About</a></li>
-        <li><a href="">Exhibitions</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+      <?php wp_nav_menu( array(
+      'theme_location' => 'main-menu',
+      'container' => 'div',
+      'container_id' => 'navigation',
+      'items_wrap' => '<ul id="navigation-items" class="lower-nav">%3$s</ul>', ) ); ?>
      <div>
         <ul class="social">
             <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
