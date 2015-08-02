@@ -80,7 +80,7 @@
     'items_wrap' => '<ul id="navigation-items" class="lower-nav">%3$s</ul>', ) ); ?>
     <div>
     <ul class="social">
-        <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.facebook.com/TheArtOfAlzheimers" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
         <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
         <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
         <li>
