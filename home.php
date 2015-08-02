@@ -25,16 +25,18 @@ Template Name: Home
       'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
     <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
-    <form class="email">
-      <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
-      <button type="submit">sign-up</button>
-    </form>
+
     <nav>
+      <form class="email">
+        <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
+        <button type="submit">sign-up</button>
+      </form>
       <?php wp_nav_menu( array(
       'theme_location' => 'main-menu',
       'container' => 'div',
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
+
       <a href="" class="donate">DONATE</a>
     </nav>
   </div>
