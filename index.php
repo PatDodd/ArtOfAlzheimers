@@ -12,12 +12,11 @@
 </head>
 <body>
   <div class="header">
-    <ul class="upper-nav">
-      <li><a href="">About</a></li>
-      <li><a href="">Donors/Partners</a></li>
-      <li><a href="">Resources</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
+    <?php wp_nav_menu( array(
+    'theme_location' => 'upper-menu',
+    'container' => 'div',
+    'container_id' => 'navigation',
+    'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
     <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
     <form class="email">
       <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
