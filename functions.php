@@ -15,7 +15,10 @@ General comments (optional).
 
 //register menus
 register_nav_menus(array(
-  'main-menu' => __('Main Menu')
+  'main-menu' => __('Main Menu'),
+  'upper-menu' => __('Upper Menu')
 ));
+
+
 
 ?>
