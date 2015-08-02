@@ -82,8 +82,8 @@
         <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
         <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
         <li>
-          <form class="email">
-            <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
+          <form>
+            <input type="text" placeholder="janesmith@example.com">
             <button type="submit">sign-up</button>
           </form>
         </li>
