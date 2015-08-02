@@ -31,6 +31,8 @@
       'container' => 'div',
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
+
+      <a href="" class="donate">DONATE</a>
     </nav>
   </div>
   <article class="home">
