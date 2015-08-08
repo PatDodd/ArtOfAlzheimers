@@ -12,9 +12,13 @@ General comments (optional).
 */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
-$font-stack: "PT Sans",helvetica,sans-serif;
+$font-stack: "PT Sans",arial,helvetica,sans-serif;
+$logo-red: #E11F26;
+$logo-blue: #00738F;
+$footer-color: #111111;
+$white: #EEEEEE;
 
-html{
+html {
   margin:0;
   padding: 0;
   font-family:$font-stack;
@@ -24,6 +28,7 @@ body{
   max-width:960px;
   margin: 0 auto;
 }
+
 .header{
   overflow:hidden;
 }
@@ -48,7 +53,7 @@ ul.upper-nav li{
 }
 
 img.logo{
-  width:336px
+  width:350px
 }
 
 .logo_a{
@@ -58,12 +63,14 @@ img.logo{
 
 nav{
   margin-top: 50px;
+  background-color: $logo-red;
+  width:100%;
 }
 
 ul.nav {
   list-style: none;
-  margin:0;
-  padding:0;
+  margin:0 0 0 2%;
+  padding:1.5% 0 1% 0;
 }
 
 ul.nav li{
@@ -73,7 +80,7 @@ ul.nav li{
 
 ul.nav li a {
   text-decoration: none;
-  color: black;
+  color: $white;
   font-family: $font-stack;
   font-size: 1.5em;
 }
@@ -82,17 +89,18 @@ a.donate{
   float: right;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: $white;
   font-family: $font-stack;
-  font-size: 1.2em;
+  font-size: 1.5em;
   border-radius: 15px;
-  background: #B2B2B2;
-  padding: 13px 13px 13px 13px;
+  background: $logo-blue;
+  padding: 18px 15px 33px 15px;
   margin-bottom: 0px;
   width: 100px;
   height: 20px;
   position: relative;
-  bottom: 40px;
+  bottom: 63.5px;
+  right: 1%;
 }
 
 form{
@@ -167,7 +175,7 @@ ul.lower-nav li{
 
 ul.lower-nav li a {
   text-decoration: none;
-  color: black;
+  color: $white;
   font-family: $font-stack;
   font-size: 1.1em;
 }
@@ -188,18 +196,15 @@ ul.social li{
 
 ul.social a{
   text-decoration: none;
-  color: black;
+  color: $white;
 }
 ul.social li form {
-  postion: relative;
+  position: relative;
   top: 7px;
 }
 
 /*** MAIN.HTML PAGE STYLES ***/
 
-.top-bar-image{
-  width:100%;
-}
 .content{
   float:left;
   width:72.916666666667%/*700px*/;
@@ -261,7 +266,9 @@ ul.social li form {
 /*** END MAIN.HTML PAGE STYLES ***/
 
 footer{
-  border: 1px solid black;
+  //border: 1px solid $footer-color;
   height: 50px;
-  background: #B2B2B2;
+  background: $footer-color;
 }
+
+@import "mobile.scss";

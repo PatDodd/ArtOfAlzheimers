@@ -19,7 +19,7 @@
     'container_id' => 'navigation',
     'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
-    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
+    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo"></a>
 
     <nav>
       <form class="email">
@@ -32,11 +32,10 @@
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
 
-      <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">DONATE</a>
+      <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">Donate</a>
     </nav>
   </div>
   <article class="home">
-    <img class="top-bar-image" src="<?php bloginfo('template_directory'); ?>/images/top-bar-image.png" alt="gallery top bar image">
     <div class="content">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
       <h2><a href="<?php the_permalink(); // link to the page or posting ?>"><?php the_title(); // get the page or posting title ?></a></h2>

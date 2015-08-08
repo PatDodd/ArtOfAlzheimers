@@ -24,7 +24,7 @@ Template Name: Home
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
-    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo" class="logo"></a>
+    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo"></a>
 
     <nav>
       <form class="email">
@@ -37,7 +37,7 @@ Template Name: Home
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
 
-      <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">DONATE</a>
+      <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">Donate</a>
     </nav>
   </div>
   <article class="home">
