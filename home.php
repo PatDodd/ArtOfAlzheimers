@@ -5,16 +5,16 @@ include 'includes/header.php';
     <div class="flexslider">
       <ul class="slides">
         <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide2.jpg" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/slide2.jpg" alt="slide1" />
         </li>
         <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide1.jpg" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/slide1.jpg" alt="slide2" />
         </li>
         <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide3.jpg" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/slide3.jpg" alt="slide3" />
         </li>
         <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide4.jpg" />
+          <img src="<?php bloginfo('template_directory'); ?>/images/slide4.jpg" alt="slide4" />
         </li>
       </ul>
     <div class="flexslider-controls">
@@ -26,7 +26,7 @@ include 'includes/header.php';
       </ol>
     </div>
   </div>
-</div>
+
   <div class="about">
     <a href="">About</a>
     <p>
@@ -54,5 +54,5 @@ include 'includes/header.php';
     </p>
   </div>
     </article>
-    
-  <?php include 'includes/home-footer.php'?>
+
+  <?php include 'includes/home-footer.php'; ?>

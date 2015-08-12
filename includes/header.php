@@ -24,8 +24,8 @@ Template Name: Home
       <?php wp_nav_menu( array(
       'theme_location' => 'upper-menu',
       'container' => 'div',
-      'container_id' => 'navigation',
-      'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
+      'container_id' => 'upper-navigation',
+      'items_wrap' => '<ul id="upper-navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
     <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo" /></a>
 
