@@ -52,7 +52,19 @@ Template Name: Home
       <li>
         <img src="<?php bloginfo('template_directory'); ?>/images/slide3.jpg" />
       </li>
+      <li>
+        <img src="<?php bloginfo('template_directory'); ?>/images/slide4.jpg" />
+      </li>
     </ul>
+    <div class="flexslider-controls">
+      <ol class="flex-control-nav">
+
+        <li><p class="title_piece">Art Piece #1</p><p class="artist">Artist1</p></li>
+        <li><p class="title_piece">Art Piece #2</p><p class="artist">Artist2</p></li>
+        <li><p class="title_piece">Art Piece #3</p><p class="artist">Artist3</p></li>
+        <li><p class="title_piece">Art Piece #4</p><p class="artist">Artist4</p></li>
+      </ol>
+    </div>
   </div>
 
   <div class="about">
@@ -104,7 +116,11 @@ Template Name: Home
     </footer>
     <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
-      $('.flexslider').flexslider();
+      $('.flexslider').flexslider({
+        animation: "slide",
+        manualControls: ".flex-control-nav li",
+        useCSS: "false"
+      });
     });
   </script>
 </body>

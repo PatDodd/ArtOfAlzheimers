@@ -21,7 +21,8 @@ body {
   margin: 0 auto; }
 
 .header {
-  overflow: hidden; }
+  overflow: none;
+  height: 150px; }
 
 ul.upper-nav {
   list-style: none;
@@ -172,10 +173,10 @@ ul.social li form {
 .content {
   float: left;
   width: 72.91667%;
-  padding-bottom: 200px; }
+  padding-bottom: 20px; }
 
 .gallery-entry {
-  padding-top: 40px; }
+  padding-top: 10px; }
 
 .gallery-entry-read-more {
   float: right;
