@@ -64,7 +64,7 @@ ul.nav li {
 
 ul.nav li a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: #FFFFFF;
   font-family: "PT Sans", arial, helvetica, sans-serif;
   font-size: 1.5em; }
 
@@ -72,7 +72,7 @@ a.donate {
   float: right;
   text-align: center;
   text-decoration: none;
-  color: #EEEEEE;
+  color: #FFFFFF;
   font-family: "PT Sans", arial, helvetica, sans-serif;
   font-size: 1.5em;
   border-radius: 15px;
@@ -144,7 +144,7 @@ ul.lower-nav li {
 
 ul.lower-nav li a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: #FFFFFF;
   font-family: "PT Sans", arial, helvetica, sans-serif;
   font-size: 1.1em; }
 
@@ -163,7 +163,7 @@ ul.social li {
 
 ul.social a {
   text-decoration: none;
-  color: #EEEEEE; }
+  color: #FFFFFF; }
 
 ul.social li form {
   position: relative;
@@ -231,6 +231,12 @@ footer {
     display: block;
     padding: 0;
     text-align: left;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .flex-control-nav li p.title_piece {
+    font-size: 0.65em; }
+
+  .flex-control-nav li p.artist {
+    font-size: .65em; } }
 
 /*# sourceMappingURL=style.css.map */
