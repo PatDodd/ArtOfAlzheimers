@@ -11,6 +11,7 @@ License URI:
 General comments (optional).
 */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
 html {
   margin: 0;
   padding: 0;
@@ -21,8 +22,8 @@ body {
   margin: 0 auto; }
 
 .header {
-  overflow: none;
-  height: 150px; }
+  height: 150px;
+ }
 
 ul.upper-nav {
   list-style: none;
@@ -230,13 +231,17 @@ footer {
   ul.nav li {
     display: block;
     padding: 0;
-    text-align: left;
-    margin: 0 auto; }
+    text-align: center;
+    margin: 0; }
 
-  .flex-control-nav li p.title_piece {
-    font-size: 0.65em; }
+   .flex-control-nav li p.title_piece {
+    font-size: 0.65em;
+  }
 
-  .flex-control-nav li p.artist {
-    font-size: .65em; } }
+   .flex-control-nav li p.artist {
+    font-size: .65em;
+   }
+
+  }
 
 /*# sourceMappingURL=style.css.map */
