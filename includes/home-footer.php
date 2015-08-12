@@ -15,7 +15,7 @@
             <button type="submit">sign-up</button>
           </form>
         </li>
-    <ul>
+    </ul>
   </div>
 </footer>
 <script type="text/javascript">
