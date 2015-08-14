@@ -73,6 +73,9 @@ img.logo{
   margin-top: 50px;
   background-color: $logo-red;
 }
+.hidden-donate{
+  display: none;
+}
 
 nav{
   width:960px;
@@ -86,7 +89,7 @@ nav{
 
 ul.nav {
   list-style: none;
-  margin:0 0 0 2%;
+  margin:0;
   padding:1.5% 0 1% 0;
 }
 
@@ -187,7 +190,6 @@ ul.lower-nav {
   padding:0;
   position: relative;
   top: 13px;
-  margin-left: 1%/*7px*/;
 }
 
 ul.lower-nav li{
@@ -220,6 +222,7 @@ ul.social a{
   text-decoration: none;
   color: $white;
 }
+
 ul.social li form {
   position: relative;
   top: 7px;

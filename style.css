@@ -57,6 +57,9 @@ img.logo {
   margin-top: 50px;
   background-color: #E11F26; }
 
+.hidden-donate {
+  display: none; }
+
 nav {
   width: 960px;
   margin: 0 auto;
@@ -67,7 +70,7 @@ nav {
 
 ul.nav {
   list-style: none;
-  margin: 0 0 0 2%;
+  margin: 0;
   padding: 1.5% 0 1% 0; }
 
 ul.nav li {
@@ -151,8 +154,7 @@ ul.lower-nav {
   margin: 0;
   padding: 0;
   position: relative;
-  top: 13px;
-  margin-left: 1%; }
+  top: 13px; }
 
 ul.lower-nav li {
   display: inline;
@@ -248,12 +250,25 @@ footer {
   height: 90px;
   background: #111111; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 980px) {
+  .upper-container {
+    width: 90%; }
+
+  nav {
+    width: 90%; }
+
+  .content-container {
+    width: 90%; }
+
+  footer {
+    width: 90%; } }
+@media screen and (max-width: 852px) {
   ul.nav li {
     display: block;
     padding: 0;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    border-bottom: 1px solid #FFFFFF; }
 
   .flex-control-nav li p.title_piece {
     font-size: 0.65em; }
@@ -262,6 +277,53 @@ footer {
     font-size: .65em; }
 
   .header {
-    margin-bottom: 190px; } }
+    margin-bottom: 190px; }
+
+  .email {
+    display: none; }
+
+  #upper-navigation-items {
+    display: none; }
+
+  .footer-container {
+    height: 250px; }
+
+  ul.lower-nav {
+    margin: 0;
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 5px; }
+
+  ul.lower-nav li {
+    display: block;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 5px; }
+
+  ul.social li form {
+    position: static;
+    top: 7px; }
+
+  ul.social {
+    display: inline-block;
+    float: none; } }
+@media screen and (max-width: 420px) {
+  ul.social li form {
+    position: static;
+    margin-top: 10px;
+    top: 7px;
+    right: 73px;
+    float: left;
+    margin-right: 15px; } }
+@media screen and (max-width: 400px) {
+  img.logo {
+    width: 90%; }
+
+  ul.social li form {
+    position: static;
+    margin-top: 10px;
+    top: 7px;
+    right: 73px;
+    float: left; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,24 @@ Template Name: Header
    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 
+   <script>
+   $(window).load(function(){
+     $('#navigation-items').append('<li class="hidden-donate"><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank">Donate</a><li>');
+     $('.hidden-donate').hide();
+   });
+   $(window).resize(function() {
+     var $window = $(window);
+     if($window.width() < 852){
+       $('.hidden-donate').show();
+       $('.donate').hide();
+     } else {
+       $('.hidden-donate').hide();
+       $('.donate').show();
+     }
+   });
+   </script>
    <?php wp_head(); ?>
+
 </head>
 <body <?php body_class( $class ); ?>>
   <div class="header">
@@ -23,8 +40,8 @@ Template Name: Header
       <?php wp_nav_menu( array(
       'theme_location' => 'upper-menu',
       'container' => 'div',
-      'container_id' => 'navigation',
-      'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
+      'container_id' => 'upper-navigation',
+      'items_wrap' => '<ul id="upper-navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
     <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo"></a>
   </div>
