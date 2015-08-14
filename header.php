@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Home
+Template Name: Header
 */
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
    <meta charset="UTF-8">
@@ -14,20 +14,19 @@ Template Name: Home
    <script src="<?php bloginfo('template_directory'); ?>/jquery.flexslider.js"></script>
    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-   <!--[if ltIE9]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-   <![endif]-->
+
+   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class( $class ); ?>>
   <div class="header">
 
       <?php wp_nav_menu( array(
       'theme_location' => 'upper-menu',
       'container' => 'div',
-      'container_id' => 'upper-navigation',
-      'items_wrap' => '<ul id="upper-navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
+      'container_id' => 'navigation',
+      'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
-    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo" /></a>
+    <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo"></a>
 
     <nav>
       <form class="email">
@@ -40,6 +39,7 @@ Template Name: Home
       'container_id' => 'navigation',
       'items_wrap' => '<ul id="navigation-items" class="nav">%3$s</ul>', ) ); ?>
 
-    <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">Donate</a>
+      <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">Donate</a>
     </nav>
   </div>
+  <article class="home">
