@@ -266,15 +266,16 @@ footer {
   .donate {
     display: none; }
 
-  .hidden-donate {
-    text-align: center; }
-
   ul.nav li {
     display: block;
     padding: 0;
     text-align: center;
     margin: 0;
     border-bottom: 1px solid #FFFFFF; }
+
+  .hidden-donate {
+    text-align: center;
+    display: visible; }
 
   .flex-control-nav li p.title_piece {
     font-size: 0.65em; }
@@ -325,6 +326,9 @@ footer {
   .latest_postings {
     width: 100%;
     display: block; } }
+@media screen and (max-width: 465px) {
+  .flexslider-controls {
+    display: none; } }
 @media screen and (max-width: 420px) {
   ul.social li form {
     position: static;
