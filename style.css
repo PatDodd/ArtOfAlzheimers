@@ -266,6 +266,9 @@ footer {
   .donate {
     display: none; }
 
+  .hidden-donate {
+    text-align: center; }
+
   ul.nav li {
     display: block;
     padding: 0;
