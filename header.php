@@ -15,33 +15,7 @@ Template Name: Header
    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 
-   <script>
-   $(window).load(function(){
-     $('#navigation-items').append('<li class="hidden-donate"><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank">Donate</a><li>');
-     $('.hidden-donate').hide();
-
-   $(window).width(function() {
-     var $window = $(window);
-     if($window.width() < 852){
-       $('.hidden-donate').show();
-       $('.donate').hide();
-     } else {
-       $('.hidden-donate').hide();
-       $('.donate').show();
-     }
-     $(window).resize(function(){
-       var $window = $(window);
-       if($window.width() < 852){
-         $('.hidden-donate').show();
-         $('.donate').hide();
-       } else {
-         $('.hidden-donate').hide();
-         $('.donate').show();
-       }
-     });
-    });
-   });
-   </script>
+   
    <?php wp_head(); ?>
 
 </head>

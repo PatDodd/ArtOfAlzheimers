@@ -31,4 +31,31 @@ $(window).load(function() {
 });
 </script>
 </body>
+<script>
+$(window).load(function(){
+  $('#navigation-items').append('<li class="hidden-donate"><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank">Donate</a><li>');
+  $('.hidden-donate').hide();
+
+$(window).width(function() {
+  var $window = $(window);
+  if($window.width() < 852){
+    $('.hidden-donate').show();
+    $('.donate').hide();
+  } else {
+    $('.hidden-donate').hide();
+    $('.donate').show();
+  }
+  $(window).resize(function(){
+    var $window = $(window);
+    if($window.width() < 852){
+      $('.hidden-donate').show();
+      $('.donate').hide();
+    } else {
+      $('.hidden-donate').hide();
+      $('.donate').show();
+    }
+  });
+ });
+});
+</script>
 </html>
