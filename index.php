@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="content-container">
     <div class="content">
       <h1><?php wp_title(''); ?></h1>
       <hr>
@@ -7,5 +8,6 @@
 
     </div>
     <small>index.php</small>
-<?php get_sidebar(); ?>       
+<?php get_sidebar(); ?>
+</div><!--end content-container-->
 <?php get_footer(); ?>

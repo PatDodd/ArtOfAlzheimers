@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="content-container">
     <div class="content">
       <h1><?php the_title(); ?></h1>
       <hr>
@@ -7,5 +8,6 @@
 
       <small>page.php</small> <!-- TO BE REMOVED AFTER DEVELOPMENT -->
     </div>
-<?php get_sidebar(); ?> 
+<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="content-container">
     <div class="flexslider">
       <ul class="slides">
         <li>
@@ -50,4 +51,5 @@
     faucibus.
     </p>
   </div>
+  </div><!-- end of content-container div-->
 <?php get_footer( 'home' ); ?>

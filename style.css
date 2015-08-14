@@ -12,27 +12,21 @@ General comments (optional).
 */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 html {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "PT Sans", arial, helvetica, sans-serif; }
 
 body {
-  max-width: 960px;
-  margin: 0 auto; }
-
-h1 {
-  font-size: 2rem; }
+  max-width: 100%;
+  margin: 0; }
 
 .header {
-<<<<<<< HEAD
   height: 150px;
-  margin-bottom: 60px; }
+  margin-bottom: 70px; }
 
-.flexslider {
-  margin-top: 10px; }
-=======
-  overflow: hidden; }
->>>>>>> fd14077cefbf343d5a886c205d62f979a4cd88a5
+.upper-container {
+  width: 960px;
+  margin: 0 auto; }
 
 ul.upper-nav {
   list-style: none;
@@ -58,11 +52,18 @@ img.logo {
   position: relative;
   top: 20px; }
 
-nav {
+.nav-container {
+  max-width: 100%;
   margin-top: 50px;
-  background-color: #E11F26;
-  width: 1vm;
+  background-color: #E11F26; }
+
+nav {
+  width: 960px;
+  margin: 0 auto;
   position: relative; }
+
+.flexslider {
+  margin-top: 20px; }
 
 ul.nav {
   list-style: none;
@@ -89,12 +90,16 @@ a.donate {
   border-radius: 15px;
   background: #00738F;
   padding: 18px 15px 33px 15px;
+  margin-bottom: 0px;
   width: 100px;
   height: 20px;
   position: absolute;
-  bottom: .05px;
-  z-index: 10;
+  top: -9px;
   right: 1%; }
+
+.content-container {
+  width: 960px;
+  margin: 0 auto; }
 
 form {
   float: right;
@@ -106,8 +111,8 @@ form {
   width: 150px; }
 
 .home {
-  overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  overflow: auto; }
 
 .about {
   width: 32.8125%;
@@ -184,52 +189,22 @@ ul.social li form {
 .content {
   float: left;
   width: 72.91667%;
-  padding-bottom: 100px; }
-
-.blog-feed {
-  padding-bottom: 40px; }
-
-.blog-feed img {
-  float: left;
-  padding: 0 20px 20px 0;
-  max-width: 100%; }
-
-.blog-feed h2 {
-  font-size: 1.5rem; }
-
-.blog-feed p{
-  margin: 0 0 16px 0; }
-
-.blog-feed a:hover,
-.blog-feed a:focus{
-  text-decoration: underline; }
+  padding-bottom: 20px; }
 
 .gallery-entry {
-  padding-bottom: 40px; }
-
-.gallery-entry img {
-  float: left;
-  padding-right: 20px;
-  max-width: 100%; }
-
-.gallery-entry h2 {
-  font-size: 1.5rem; }
-
-.gallery-entry a {
-  text-decoration: none; }
-
-.artist-name {
-  text-decoration: none;
-  color: #000; }
+  padding-top: 10px; }
 
 .gallery-entry-read-more {
   float: right;
-  color: #000;
-  text-decoration: none; }
+  color: #000; }
 
-.gallery-entry a:hover,
-.gallery-entry a:focus {
-  text-decoration: underline; }
+.gallery-entry img {
+  float: left;
+  padding: 20px 20px 0px 0px;
+  max-width: 100%; }
+
+.gallery-entry h3 {
+  text-decoration: none; }
 
 .right-sidebar {
   float: right;
@@ -262,36 +237,15 @@ ul.social li form {
   color: #000;
   padding: 5px; }
 
-.pager-div {
-  width: 100%;
-  overflow: hidden; }
-
-.pager-div-collapse{
-  display:none; }
-
-.forward-paging-link {
-  float:right; }
-
-.backward-paging-link {
-  float:left; }
-
-.forward-paging-link a {
-  text-decoration: none; }
-
-.forward-paging-link  a:hover,
-.forward-paging-link  a:focus {
-  text-decoration: underline; }
-
-.backward-paging-link a {
-  text-decoration: none; }
-
-.backward-paging-link  a:hover,
-.backward-paging-link  a:focus {
-  text-decoration: underline; }
-
 /*** END MAIN.HTML PAGE STYLES ***/
 footer {
-  height: 50px;
+  width: 960px;
+  margin: 0 auto; }
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 90px;
   background: #111111; }
 
 @media screen and (max-width: 850px) {

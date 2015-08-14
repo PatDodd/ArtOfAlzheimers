@@ -1,4 +1,6 @@
+
 <footer>
+  <div class="footer-container">
   <?php wp_nav_menu( array(
   'theme_location' => 'main-menu',
   'container' => 'div',
@@ -7,7 +9,6 @@
   <div>
   <ul class="social">
       <li><a href="https://www.facebook.com/TheArtOfAlzheimers" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
       <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
       <li>
         <form>
@@ -17,6 +18,8 @@
       </li>
   </ul>
   </div>
+  </div><!--end footer-container-->
 </footer>
+
 </body>
 </html>

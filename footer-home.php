@@ -1,3 +1,4 @@
+<div class="footer-container">
 <footer>
   <?php wp_nav_menu( array(
   'theme_location' => 'main-menu',
@@ -18,6 +19,7 @@
     </ul>
   </div>
 </footer>
+</div><!--end footer-container-->
 <script type="text/javascript">
 $(window).load(function() {
   $('.flexslider').flexslider({

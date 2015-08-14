@@ -19,7 +19,7 @@ Template Name: Header
 </head>
 <body <?php body_class( $class ); ?>>
   <div class="header">
-
+    <div class="upper-container">
       <?php wp_nav_menu( array(
       'theme_location' => 'upper-menu',
       'container' => 'div',
@@ -27,7 +27,8 @@ Template Name: Header
       'items_wrap' => '<ul id="navigation-items" class="upper-nav">%3$s</ul>', ) ); ?>
 
     <a href="<?php echo get_option('home'); ?>" class="logo_a"><img src="<?php bloginfo('template_directory'); ?>/images/aoalogo.png" alt="logo" class="logo"></a>
-
+  </div>
+<div class="nav-container">
     <nav>
       <form class="email">
         <label>Subscribe:</label> <input type="text" placeholder="janesmith@example.com">
@@ -41,5 +42,6 @@ Template Name: Header
 
       <a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank" class="donate">Donate</a>
     </nav>
+  </div>
   </div>
   <article class="home">

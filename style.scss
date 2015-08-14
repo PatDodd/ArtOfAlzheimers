@@ -19,23 +19,25 @@ $footer-color: #111111;
 $white: #FFFFFF;
 
 html {
-  margin:0 auto;
+  margin:0;
   padding: 0;
   font-family:$font-stack;
 }
 
 body{
-  max-width:960px;
-  margin: 0 auto;
+  max-width:100%;
+  margin:0;
+//  margin: 0 auto;
 }
 
 .header{
   height: 150px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
-.flexslider{
-  margin-top:10px;
+.upper-container{
+  width:960px;
+  margin: 0 auto;
 }
 
 ul.upper-nav{
@@ -66,13 +68,20 @@ img.logo{
   position: relative;
   top:20px;
 }
-
-nav{
+.nav-container{
+  max-width: 100%;
   margin-top: 50px;
   background-color: $logo-red;
-  width:1vm/*100%*/;
-  position: relative;
+}
 
+nav{
+  width:960px;
+  margin: 0 auto;
+  position:relative;
+}
+
+.flexslider{
+    margin-top: 20px;
 }
 
 ul.nav {
@@ -106,10 +115,14 @@ a.donate{
   margin-bottom: 0px;
   width: 100px;
   height: 20px;
-  position:absolute;
-  bottom: .05px;
-  z-index: 10;
+  position: absolute;
+  top:-9px;
   right: 1%;
+}
+
+.content-container{
+  width: 960px;
+  margin: 0 auto;
 }
 
 form{
@@ -124,8 +137,8 @@ form{
 }
 
 .home{
-  overflow:hidden;
   width:100%;
+  overflow:auto;
 }
 
 .about{
@@ -276,7 +289,14 @@ ul.social li form {
 
 footer{
   //border: 1px solid $footer-color;
-  height: 50px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container{
+  max-width:100%;
+  margin: 0 auto;
+  height: 90px;
   background: $footer-color;
 }
 
