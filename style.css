@@ -313,6 +313,18 @@ footer {
   ul.social {
     display: inline-block;
     float: none; } }
+@media screen and (max-width: 610px) {
+  .about {
+    width: 100%;
+    display: block; }
+
+  .quote {
+    width: 100%;
+    display: block; }
+
+  .latest_postings {
+    width: 100%;
+    display: block; } }
 @media screen and (max-width: 420px) {
   ul.social li form {
     position: static;
