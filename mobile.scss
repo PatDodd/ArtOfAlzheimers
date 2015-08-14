@@ -17,7 +17,9 @@
 }
 
 @media screen and (max-width: 850px){
-
+  .donate{
+    display: none;
+  }
   ul.nav li{
     display: block;
     padding:0;
