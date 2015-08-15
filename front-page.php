@@ -24,32 +24,41 @@
       </ol>
     </div>
   </div>
-
-  <div class="about">
-    <a href="">About</a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Morbi tristique aliquam est, id
-    tincidunt orci luctus sit amet. Interdum et
-    malesuada fames ac ante ipsum primis in
-    faucibus.
-    </p>
+  <div class="cta-area">
+    <div class="cta">
+      <h2>Latest News</h2>
+      <hr>
+      <ul>
+      <?php
+        $args = array( 'numberposts' => '3', 'category_name' => 'news' );
+        $recent_posts = wp_get_recent_posts( $args );
+        foreach( $recent_posts as $recent ){
+          echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+          echo '<small>Posted on ' . get_the_time('F jS, Y') . '</small>';
+          echo '<br><br>';
+        }
+      ?>
+      </ul>
+    </div>
+    <div class="cta">
+      <h2>About</h2>
+      <hr>
+      <?php about_cta(); ?>
+    </div>
+    <div class="cta">
+      <h2>Latest Postings</h2>
+      <hr>
+      <ul>
+      <?php
+        $args = array( 'numberposts' => '3', 'category_name' => 'blog' );
+        $recent_posts = wp_get_recent_posts( $args );
+        foreach( $recent_posts as $recent ){
+          echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+          echo '<small>Posted on ' . get_the_time('F jS, Y') . '</small>';
+          echo '<br><br>';
+        }
+      ?>
+      </ul>
+    </div>
   </div>
-  <div class="quote">
-    <blockquote>
-      “Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit.”
-    </blockquote>
-  </div>
-  <div class="latest_postings">
-    <a href="">Latest Postings</a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Morbi tristique aliquam est, id
-    tincidunt orci luctus sit amet. Interdum et
-    malesuada fames ac ante ipsum primis in
-    faucibus.
-    </p>
-  </div>
-  </div><!-- end of content-container div-->
 <?php get_footer( 'home' ); ?>

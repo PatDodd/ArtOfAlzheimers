@@ -110,4 +110,19 @@ function gallery_page_feed() {
     }
 }
 
-?>
+function about_cta() {
+	$args = array( 'post_type' => 'page', 'pagename' => 'about' ); //see if the post is a page and if the parent is gallery
+
+    $the_query = new WP_Query( $args );
+
+    if ( is_page('home') && $the_query->have_posts() ){ //run the loop with these parameters
+        // The Loop
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            echo '<p>' . get_the_excerpt() . '</p>';
+            echo '<a class="gallery-entry-read-more" href="' . get_permalink() . '">Read More</a>';
+        }
+        wp_reset_postdata(); //reset
+
+    }
+}
