@@ -132,7 +132,7 @@ form {
   color: black;
   text-decoration: none;
 }
-.cta ul{  
+.cta ul{
   padding-left: 1em;
 }
 .cta li{
@@ -249,7 +249,7 @@ footer {
   margin: 0 auto; }
 
 .footer-container {
-  max-width: 100%;
+  width: 1vm;
   margin: 0 auto;
   height: 90px;
   background: #111111; }
