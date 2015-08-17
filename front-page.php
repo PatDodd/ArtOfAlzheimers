@@ -30,14 +30,21 @@
       <hr>
       <ul>
       <?php
+      
         $args = array( 'numberposts' => '3', 'category_name' => 'news' );
-        $recent_posts = wp_get_recent_posts( $args );
-        foreach( $recent_posts as $recent ){
-          echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-          echo '<small>Posted on ' . get_the_time('F jS, Y') . '</small>';
-          echo '<br><br>';
-        }
+        $posts = get_posts($args);
+        if ($posts) {
+          foreach($posts as $post) {
+            setup_postdata($post);
       ?>
+            <li>
+            <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+            <p><small>Posted on <?php the_time('F j, Y') ?></small></p>
+          </li>
+        <?php
+          }
+        }
+        ?>
       </ul>
     </div>
     <div class="cta">
@@ -49,15 +56,23 @@
       <h2>Latest Postings</h2>
       <hr>
       <ul>
-      <?php
-        $args = array( 'numberposts' => '3', 'category_name' => 'blog' );
-        $recent_posts = wp_get_recent_posts( $args );
-        foreach( $recent_posts as $recent ){
-          echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-          echo '<small>Posted on ' . get_the_time('F jS, Y') . '</small>';
-          echo '<br><br>';
-        }
-      ?>
+
+        <?php
+          $args = array( 'numberposts' => '3', 'category_name' => 'blog' );
+          $posts = get_posts($args);
+          if ($posts) {
+            foreach($posts as $post) {
+              setup_postdata($post);
+        ?>
+              <li>
+              <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+              <p><small>Posted on <?php the_time('F j, Y') ?></small></p>
+            </li>
+          <?php
+            }
+          }
+          ?>
+
       </ul>
     </div>
   </div>

@@ -126,7 +126,8 @@ form {
   padding:0 1%;
   width: 31.333%;
   display: inline-block;
-  float:left; }
+  float:left;}
+
 
 .cta a{
   color: black;
@@ -134,18 +135,32 @@ form {
 }
 .cta ul{
   padding-left: 1em;
+  list-style: none;
+  margin:0;
+  padding:0;
 }
 .cta li{
-  font-weight:bold;
   text-decoration: none;
   color: black;
+  margin-bottom: 10px;
+  
+}
+.cta li p {
+  line-height: 1.5em;
+  margin: 0;
+}
+.cta li p:last-child {
+  padding-bottom: 5px;
 }
 .cta p{
   line-height: 1.5em;
-  padding-left: 1em;
+  padding:0 2%;
 }
+.cta p.about-text{
+  padding: 0 2%;
+}
+
 .cta h2{
-  padding-left: 1em;
   font-size: 1.25rem;
 }
 .cta a:hover,
@@ -214,11 +229,19 @@ ul.social li form {
 
 .right-sidebar {
   float: right;
-  width: 22.91667%; }
+  width: 22.91667%;
+  margin-bottom: 15px;}
 
 .latest-postings-sidebar a {
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  font-size: 1.3em;}
+
+  .latest-postings-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
 .sidebar-latest-post {
   padding-top: 20px; }
@@ -234,6 +257,9 @@ ul.social li form {
 .blog-archives-sidebar {
   padding-top: 30px; }
 
+.blog-archives-sidebar li{
+  list-style: none;
+}
 .blog-archives-sidebar ul {
   padding: 0; }
 

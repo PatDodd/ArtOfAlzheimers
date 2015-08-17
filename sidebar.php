@@ -1,28 +1,29 @@
+
 <div class="right-sidebar">
   <div class="latest-postings-sidebar">
-    <a href="#"><h3>Latest Postings</h3>
-    <a href="#"><div class="sidebar-latest-post">
-      <img src="images/sidebar-thumbnail-1.png" alt="latest postings sidebar thumbnail">
-      <h4>Lorem Ipsum</h4>
-      <small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</small>
-    </div></a>
-    <a href="#"><div class="sidebar-latest-post">
-      <img src="images/sidebar-thumbnail-2.png" alt="latest postings sidebar thumbnail">
-      <h4>Lorem Ipsum</h4>
-      <small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</small>
-    </div></a>
-    <a href="#"><div class="sidebar-latest-post">
-      <img src="images/sidebar-thumbnail-3.png" alt="latest postings sidebar thumbnail">
-      <h4>Lorem Ipsum</h4>
-      <small>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</small>
-    </div></a>
+    <h2>Latest Postings</h2>
+    <hr>
+
+
+    <?php
+      $args = array( 'numberposts' => '3', 'category_name' => 'blog' );
+      $posts = get_posts($args);
+      if ($posts) {
+        foreach($posts as $post) {
+        setup_postdata($post);
+    ?>
+
+    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+    <p><small><?php the_time('F j, Y') ?></small></p></li>
+    <p><small><?php the_excerpt(); ?></small></p>
+      <?php
+        }
+      }
+      ?>
+
   </div>
   <div class="blog-archives-sidebar">
     <h3>Blog Archives</h3>
-    <ul>
-      <a href="#"><li>&#9658; 2015</li></a>
-      <a href="#"><li>&#9658; 2014</li></a>
-      <a href="#"><li>&#9658; 2013</li></a>
-    </ul>
+    <?= wp_get_archives('type=yearly');?>
   </div>
 </div>

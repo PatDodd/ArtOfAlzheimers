@@ -119,7 +119,7 @@ function about_cta() {
         // The Loop
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
-            echo '<p>' . get_the_excerpt() . '</p>';
+            echo '<p class="about-text">' . get_the_excerpt() . '</p>';
             echo '<a class="gallery-entry-read-more" href="' . get_permalink() . '">Read More</a>';
         }
         wp_reset_postdata(); //reset
