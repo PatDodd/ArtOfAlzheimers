@@ -20,14 +20,18 @@
       </div>
     </footer>
   </div>
-    <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider();
-    });
-  </script>
+
 
   <?php wp_footer(); ?>
+  <script>
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+  </script>
 </body>
+
 <script>
 $(window).load(function(){
   $('#navigation-items').append('<li class="hidden-donate"><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=109053" target="_blank">Donate</a><li>');

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'home' ); ?>
 <div class="content-container">
     <div class="flexslider">
       <ul class="slides">
@@ -30,7 +30,7 @@
       <hr>
       <ul>
       <?php
-      
+
         $args = array( 'numberposts' => '3', 'category_name' => 'news' );
         $posts = get_posts($args);
         if ($posts) {

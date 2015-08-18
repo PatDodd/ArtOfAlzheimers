@@ -5,9 +5,13 @@
       <hr>
 
       <?php gallery_page_feed(); ?>
+      <div>
+      <?php add_flexslider(); ?>
+    </div>
 
       <small>page.php</small> <!-- TO BE REMOVED AFTER DEVELOPMENT -->
     </div>
+
 <?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
