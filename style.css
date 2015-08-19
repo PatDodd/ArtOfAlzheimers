@@ -28,6 +28,8 @@ body {
     margin-bottom:10px;
   }
 
+  .wpcf7{float: left;}
+
 .upper-container {
   width: 960px;
   margin: 0 auto; }
