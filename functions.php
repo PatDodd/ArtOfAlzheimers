@@ -127,32 +127,6 @@ function about_cta() {
     }
 }
 
-// function flexsliderGallery() {
-//
-//   global $post;
-//
-//   $attachments = get_children(array(
-//     'post-parent' => $post->ID,
-//     'order' => 'ASC',
-//     'orderby' => 'menu_order',
-//     'post_type' => 'attachment',
-//     'post_mime_type' => 'image'
-//   ));
-//
-//   if($attachments) {
-//     echo '<div class="flexslider">';
-//     echo '<ul class="slides">';
-//
-//     foreach($attachments as $attachment_id => $attachment){
-//         echo '<li>';
-//         echo wp_get_attachment_image($attachment_id);
-//         echo '</li>';
-//
-//     }
-//     echo '</ul>';
-//     echo '</div>';
-//   }
-// }//end flexsliderGallery
 function add_flexslider() { // display attachment images as a flexslider gallery on single posting
 
     global $post; // don't forget to make this a global variable inside your function
@@ -161,8 +135,8 @@ function add_flexslider() { // display attachment images as a flexslider gallery
 
     if ($attachments) { // if there are images attached to posting, start the flexslider markup
 
-        echo '<div class="flexslider">';
-        echo '<ul class="slides" id="">';
+        echo '<div class="flexslider" id="flex-gallery">';
+        echo '<ul class="slides">';
 
         foreach ( $attachments as $attachment_id => $attachment ) { // create the list items for images with captions
 
@@ -203,11 +177,11 @@ function add_flexslider_home() { // display attachment images as a flexslider ga
         echo '</ul>';
         echo '<div class="flexslider-controls">';
         echo  '<ol class="flex-control-nav">';
-        foreach ( $attachments as $attachment_id => $attachment ) {
+        foreach ( $attachments as $attachment_id => $attachment ) { //grab wp metadata from media gallery for Artist and Title
           $alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
   	      $caption = $attachment->post_excerpt;
 
-          echo    '<li><p class="title_piece">'. $alt .'</p><p class="artist">' . $caption . '</p></li>';
+          echo '<li><p class="title_piece">'. $alt .'</p><p class="artist">' . $caption . '</p></li>';
 
         }
         echo  '</ol>';

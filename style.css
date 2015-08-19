@@ -68,6 +68,10 @@ nav {
 .flexslider {
   margin-top: 20px; }
 
+.flex-gallery{
+  width: 50%;
+}
+
 ul.nav {
   list-style: none;
   margin: 0;
@@ -143,7 +147,7 @@ form {
   text-decoration: none;
   color: black;
   margin-bottom: 10px;
-  
+
 }
 .cta li p {
   line-height: 1.5em;
