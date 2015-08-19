@@ -223,6 +223,11 @@ ul.social li form {
   position: relative;
   top: 7px; }
 
+ul.social a:hover,
+ul.social a:focus{
+  color:#00738F;
+}
+
 /*** MAIN.HTML PAGE STYLES ***/
 .content {
   float: left;
