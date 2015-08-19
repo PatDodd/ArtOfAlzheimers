@@ -186,8 +186,8 @@ ul.lower-nav {
   position: relative;
   top: 13px; }
 
-footer a:hover,
-footer a:focus{
+ul.lower-nav a:hover,
+ul.lower-nav a:focus{
   text-decoration: underline;
 }
 
