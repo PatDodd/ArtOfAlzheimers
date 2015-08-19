@@ -24,8 +24,9 @@ body {
   height: 150px;
   margin-bottom: 70px; }
 
-#contact-form{
+.wpfcf7{
   float: left;
+  margin-left: 10px;
 }
 
 .upper-container {
