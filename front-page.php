@@ -1,29 +1,6 @@
 <?php get_header( 'home' ); ?>
 <div class="content-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide2.jpg" alt="slide1" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide1.jpg" alt="slide2" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide3.jpg" alt="slide3" />
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory'); ?>/images/slide4.jpg" alt="slide4" />
-        </li>
-      </ul>
-    <div class="flexslider-controls">
-      <ol class="flex-control-nav">
-        <li><p class="title_piece">Art Piece #1</p><p class="artist">Artist1</p></li>
-        <li><p class="title_piece">Art Piece #2</p><p class="artist">Artist2</p></li>
-        <li><p class="title_piece">Art Piece #3</p><p class="artist">Artist3</p></li>
-        <li><p class="title_piece">Art Piece #4</p><p class="artist">Artist4</p></li>
-      </ol>
-    </div>
-  </div>
+  <?php add_flexslider_home(); ?>
   <div class="cta-area">
     <div class="cta">
       <h2>Latest News</h2>
