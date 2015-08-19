@@ -24,9 +24,9 @@ body {
   height: 150px;
   margin-bottom: 70px; }
 
-  .wpcf7{
-    text-align: left;
-  }
+.wpcf7{
+  float: left;
+}
 
 .upper-container {
   width: 960px;
