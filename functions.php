@@ -141,7 +141,7 @@ function add_flexslider() { // display attachment images as a flexslider gallery
         foreach ( $attachments as $attachment_id => $attachment ) { // create the list items for images with captions
 
             echo '<li>';
-            echo wp_get_attachment_image($attachment_id, 'large');
+            echo wp_get_attachment_image($attachment_id, 'medium');
 
             echo '</li>';
 
