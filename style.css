@@ -24,6 +24,10 @@ body {
   height: 150px;
   margin-bottom: 70px; }
 
+  .form-head{
+    margin-bottom:10px;
+  }
+
 .upper-container {
   width: 960px;
   margin: 0 auto; }
@@ -146,14 +150,14 @@ form {
 
 }
 .cta li p {
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin: 0;
 }
 .cta li p:last-child {
   padding-bottom: 5px;
 }
 .cta p{
-  line-height: 1.5em;
+  line-height: 1.35em;
   padding:0 2%;
 }
 .cta p.about-text{
