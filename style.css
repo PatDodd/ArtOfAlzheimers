@@ -293,6 +293,13 @@ footer {
   footer {
     width: 90%; } }
 @media screen and (max-width: 851px) {
+  .right-sidebar{
+    display:none;
+  }
+
+  .content{
+    width:100%;
+  }
   .donate {
     display: none; }
 
