@@ -8,8 +8,6 @@
       <div>
       <?php add_flexslider(); ?>
     </div>
-
-      
     </div>
 
 <?php get_sidebar(); ?>

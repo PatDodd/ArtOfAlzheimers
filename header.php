@@ -9,6 +9,7 @@ Template Name: Header
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
    <title><?php bloginfo('Description'); ?> | <?php bloginfo('name'); ?></title>
+   <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/images/favicon.png">
    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" type="text/css">
    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
