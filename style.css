@@ -28,6 +28,7 @@ body {
   float: left;
   position: relative;
   left: 8px;
+  top: 20px;
 }
 
 .upper-container {
