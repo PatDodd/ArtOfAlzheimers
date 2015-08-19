@@ -203,10 +203,13 @@ function add_flexslider_home() { // display attachment images as a flexslider ga
         echo '</ul>';
         echo '<div class="flexslider-controls">';
         echo  '<ol class="flex-control-nav">';
-        echo    '<li><p class="title_piece">Art Piece #1</p><p class="artist">Artist1</p></li>';
-        echo    '<li><p class="title_piece">Art Piece #2</p><p class="artist">Artist2</p></li>';
-        echo    '<li><p class="title_piece">Art Piece #3</p><p class="artist">Artist3</p></li>';
-        echo    '<li><p class="title_piece">Art Piece #4</p><p class="artist">Artist4</p></li>';
+        foreach ( $attachments as $attachment_id => $attachment ) {
+          $alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
+  	      $caption = $attachment->post_excerpt;
+
+          echo    '<li><p class="title_piece">'. $alt .'</p><p class="artist">' . $caption . '</p></li>';
+
+        }
         echo  '</ol>';
         echo  '</div>';
         echo '</div>';
