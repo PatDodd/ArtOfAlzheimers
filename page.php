@@ -9,7 +9,7 @@
       <?php add_flexslider(); ?>
     </div>
 
-      <small>page.php</small> <!-- TO BE REMOVED AFTER DEVELOPMENT -->
+      
     </div>
 
 <?php get_sidebar(); ?>

@@ -7,7 +7,7 @@
       <?php blog_page_feed(); ?>
 
     </div>
-    <small>home.php</small>
+    
 <?php get_sidebar(); ?>
-</div><!--end content-container-->      
+</div><!--end content-container-->
 <?php get_footer(); ?>
